@@ -1,0 +1,30 @@
+.header {
+  display:grid;
+  grid-template-columns: 20% 80%;
+  align-items: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  /* Need to add breakpoints for this and component it. Otherwise we will repeat everywhere.. */
+  width: 1240px;
+  .header__menu {
+    grid-column: 2/3;
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      a {
+        text-decoration: none;
+        color: black;
+        font-size:16px;
+      }
+    }
+  }
+  .header__logo {
+    a {
+      display:none;
+    }
+  }
+}

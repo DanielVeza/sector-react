@@ -1,18 +1,17 @@
 import React, { Fragment } from 'react';
-import FetchApproach from './FetchApproach';
 import logo from './logo.svg';
 import './App.css';
+//import './css/global.styles.css';
+import HeaderComponent from "./Components/HeaderComponent";
 
 const App: React.FC = () => {
   return (
     <Fragment>
-        <FetchApproach />
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
+      <HeaderComponent />
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>Edit <code>src/App.tsx</code> and save to reload.</p>
         <a
           className="App-link"
           href="https://reactjs.org"
