@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import FetchApproach from './FetchApproach';
 import logo from './logo.svg';
 import './App.css';
 
 const App: React.FC = () => {
   return (
+    <Fragment>
+        <FetchApproach />
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -20,6 +23,7 @@ const App: React.FC = () => {
         </a>
       </header>
     </div>
+    </Fragment>
   );
 }
 
