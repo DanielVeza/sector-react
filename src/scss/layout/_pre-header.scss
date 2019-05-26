@@ -1,0 +1,11 @@
+/**
+ * @file
+ * BEM block for pre-header.
+ */
+.pre-header {
+  background-color: $white;
+  .region-pre-header {
+    width: 100%;
+    @include apply-gutter;
+  }
+}

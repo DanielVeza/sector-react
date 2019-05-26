@@ -1,0 +1,104 @@
+/**
+ * @file
+ * BEM block for Webforms.
+ */
+
+.webform-submission-form {
+  @extend %has-margin-top-double;
+  a {
+    text-decoration: underline;
+  }
+  .form-item {
+    @extend %has-margin-top-base;
+    &.form-type-radio,
+    &.form-type-checkbox,
+    &.form-item-text-format-format {
+      margin-top: 0;
+    }
+  }
+  .panel-default {
+    .panel-heading {
+      @extend %switch;
+      a {
+        text-decoration: none;
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .form-item-range__output {
+    @include respond-to(tablet-and-up) {
+      line-height: 50px;
+    }
+  }
+  .form-type-color {
+    > input {
+      margin: 0;
+    }
+  }
+  [data-drupal-selector="edit-actions"] {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    @extend %has-margin-top-and-half;
+    .btn {
+      margin-right: 10px;
+    }
+  }
+}
+
+.webform-flexbox {
+  @include respond-to(tablet-large-and-up) {
+    margin: 0 -1em;
+  }
+}
+
+.webform-flex--container {
+  @include respond-to(tablet-large-and-up) {
+    margin: 0 1em;
+  }
+}
+
+.webform-multiple-add {
+  .btn-success {
+    @extend .btn-primary;
+  }
+}
+
+.webform-multiple-table--operations {
+  margin-bottom: 20px;
+  .btn {
+    @extend .btn-sm;
+  }
+  .btn-success {
+    @extend .btn-primary;
+    margin-right: 10px;
+  }
+}
+
+.webform-multiple-add,
+.form-item-entity-autocomplete-multiple-add-more-items {
+  input {
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.webform-progress-tracker .progress-step.is-complete .progress-marker,
+.webform-progress-tracker .progress-step.is-complete:hover .progress-marker,
+.webform-progress-tracker .progress-step.is-active:hover .progress-marker,
+.progress-step.is-active .progress-marker,
+.progress-step.is-complete::after {
+  background-color: $brand-info;
+}
+
+.progress-marker {
+  padding-bottom: 0;
+}
+
+.progress-step .progress-marker {
+  font-weight: 700;
+}

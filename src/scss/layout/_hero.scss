@@ -1,0 +1,40 @@
+/**
+ * @file
+ * BEM block for hero.
+ */
+.hero {
+  background-color: $brand-gray-lightest;
+  .path-frontpage & {
+    background-color: transparent;
+  }
+  .region-hero {
+    @include apply-gutter;
+    .path-frontpage & {
+      padding-top: 3vw;
+      padding-bottom: 15vw;
+      margin: 0;
+      @include respond-to(tablet-and-up) {
+        padding-bottom: 8vw;
+      }
+      @include respond-to(wide-and-up) {
+        padding-right: 70%;
+        padding-top: 13vh;
+        padding-bottom: 17vh;
+        background-image: url(../../images/device-set.svg);
+        background-position: right 90px;
+        background-repeat: no-repeat;
+        background-size: 697px 470px;
+      }
+      @include respond-to(mega-and-up) {
+        background-position: 490px 90px;
+      }
+    }
+  }
+}
+
+:not(.path-frontpage) .region-hero {
+  margin: 2vw 0;
+  @include respond-to(desktop-and-up) {
+    margin: 2vh 0;
+  }
+}

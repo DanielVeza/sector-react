@@ -1,0 +1,10 @@
+/**
+ * @file
+ * BEM block for help.
+ */
+.help {
+  .region-help {
+    width: 100%;
+    @include apply-gutter;
+  }
+}

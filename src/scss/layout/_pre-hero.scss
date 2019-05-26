@@ -1,0 +1,10 @@
+/**
+ * @file
+ * BEM block for pre-hero.
+ */
+.pre-hero {
+  .region-pre-hero {
+    width: 100%;
+    @include apply-gutter;
+  }
+}

@@ -1,0 +1,9 @@
+/**
+ * @file
+ * BEM block for Transcript.
+ */
+.transcript {
+  > div {
+    @extend %switch;
+  }
+}

@@ -1,0 +1,10 @@
+/**
+ * @file
+ * BEM block for post-header.
+ */
+.post-header {
+  .region-post-header {
+    width: 100%;
+    @include apply-gutter;
+  }
+}

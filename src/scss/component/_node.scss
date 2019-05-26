@@ -1,0 +1,35 @@
+/**
+ * @file
+ * BEM block for Node.
+ */
+
+.node__date {
+  @extend %date;
+}
+
+.node__subtitle {
+  margin-bottom: 0;
+  font-weight: 300;
+  @include respond-to(tablet-and-up) {
+    font-size: 22px;
+    line-height: 1.7;
+  }
+  .hero & {
+    .path-frontpage & {
+      font-weight: 400;
+      @extend %has-margin-top-base;
+      @include respond-to(tablet-and-up) {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.node__term {
+  font-size: $font-size-h4;
+  color: $gray-light;
+  margin-top: $spacing-half;
+  @include respond-to(tablet-and-up) {
+    margin-top: 0;
+  }
+}
